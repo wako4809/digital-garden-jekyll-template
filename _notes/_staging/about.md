@@ -1,25 +1,3 @@
----
-layout: page
-title: About
-permalink: /about
----
-<style>
-	th:nth-child(1),
-	td:nth-child(1) {
-	  width: 15%;
-	}
-
-	th:nth-child(2),
-	td:nth-child(2) {
-	  width: 60%;
-	}
-
-	th:nth-child(3),
-	td:nth-child(3) {
-	  width: 30%;
-  }		
-</style>
-
 ## Education
 
 | 2011–2014 | VASHGD (S.G. Stroganov Akademie für Kunst und Industrie) | Fachrichtung: Design.<br>Abschluss: Spezialist |
