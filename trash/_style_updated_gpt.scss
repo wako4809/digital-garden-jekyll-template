@@ -1,17 +1,25 @@
-$color-primary: hsl(0, 0%, 10%);
-$color-text: hsl(0, 0%, 20%);
-$color-subtext: hsl(0, 0%, 30%);
-$color-border: hsl(0, 0%, 85%);
-$color-box-background: mix($color-primary, white, 4%);
-$border-radius: 4px;
-/*$font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
-  sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;*/
-$font-family: "Inter", serif, 
-  sans-serif, Segoe UI Emoji, Segoe UI Symbol;
 
-/* Ensure full-page height */
+/* Define light theme (default) */
+:root {
+  --color-primary: hsl(0, 0%, 10%);
+  --color-text: hsl(0, 0%, 20%);
+  --color-subtext: hsl(0, 0%, 30%);
+  --color-border: hsl(0, 0%, 85%);
+  --color-box-background: hsl(0, 0%, 96%); /* Adjusted for visibility */
+}
+
+/* Define dark theme */
+[data-theme="dark"] {
+  --color-primary: hsl(0, 0%, 90%);
+  --color-text: hsl(0, 0%, 95%);
+  --color-subtext: hsl(0, 0%, 70%);
+  --color-border: hsl(0, 0%, 40%);
+  --color-box-background: hsl(0, 0%, 20%);
+}
+
 html, body {
-  margin: 0;
+  height: 100%;
+  margin: auto;
   padding: 0;
 }
 
@@ -21,61 +29,86 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: $font-family;
+  margin: auto;
+  line-height: 1.5;
+  padding: 2vh 4vw;
+  overflow-x: hidden;
+
+  background-color: var(--color-box-background);
+  color: var(--color-text);
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  @media (min-width: 820px) {
+    font-size: 1.2rem;
+  }
+}
+
+/* Other styles remain unchanged */
+$color-primary: hsl(0, 0%, 10%);
+$color-text: hsl(0, 0%, 20%);
+$color-subtext: hsl(0, 0%, 30%);
+$color-border: hsl(0, 0%, 85%);
+$color-box-background: mix($color-primary, white, 4%);
+$border-radius: 4px;
+$font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+  sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+
+/* Ensure full-page height */
+html, body {
+  height: 100%; /* Ensures full height for the page */
+  margin: auto;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+/*  max-width: 40em; */
+  
+  font-family: $font-family;
+  margin: auto;
   line-height: 1.5;
   padding: 2vh 4vw;
   overflow-x: hidden;
   color: $color-text;
-  font-size: 1rem;
-    
+/*  font-size: 1rem; */
+  p {
+    font-size: 0.9rem;
+	}  
+	  
   @media (min-width: 820px) {
     font-size: 1.2rem;
   }
 }
 
 .wrapper {
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  flex: 1;
-  width: 100%;
-  max-width: 36em;	
-  
+  flex-grow: 1;
+  max-width: 38em; /* Keeps content readable */
 }
 
 /* Main content should expand */
 main {
-  flex: 1;
-  margin: 0 auto;
-  width: 100%;
+  flex-grow: 1; /* Ensures it takes up remaining space */
 }
 
 time {
   display: block;
   color: $color-subtext;
   margin: 0.5em 0 1em;
-  font-size: 0.8rem;
 }
 
 footer {
-  flex-shrink: 0;
-  width: 100%;
-  margin-top: auto;
-  padding-top:40px;
-  display: flex;
-  justify-content: space-between;
-  margin: 0;	
-	
-  font-size: 1rem;
-  
-  color: mix($color-text, white, 40%);
-  
-  a {
-    color: mix($color-text, white, 40%);  
-  }
-  
-  p {
-    margin: 0;		
-  }
+  margin: none;
+  font-size: 0.8em;
+  color: mix($color-text, white, 80%);
+  padding-top: 1em;
 }
 
 img {
@@ -107,24 +140,22 @@ hr {
 }
 
 h1,
- {
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.2;
   margin-bottom: 0;
   padding-bottom: 0;
   font-size: 1.5em;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
   line-height: 1;
   margin-bottom: 1;
   padding-bottom: 0;
-  font-size: 1.2rem;	
+  font-size: 1em;	
 }
-
 
 /* General table styling */
 table {
@@ -132,9 +163,9 @@ table {
   width: 100%;
 /*  table-layout: fixed; */
   text-align: left;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   line-height: 1.2;
-  border-top: 1px solid #000000; /* Adjust color as needed */
+  border-top: 1px solid #ccc; /* Adjust color as needed */
 }
 
 /* Header row styling */
@@ -145,7 +176,7 @@ thead th {
 /* Align text to the top */
 td, th {
   vertical-align: top;
-  border-bottom: 1px solid #000000; /* Adjust color as needed */
+  border-bottom: 1px solid #ccc; /* Adjust color as needed */
 }
 /* Set column widths */
 
@@ -153,9 +184,6 @@ td:not(:last-child), th:not(:last-child) {
 	padding-right: 5px
 }
 
-li {
-  font-size: 1rem;
-}
 
 a {
   transition: background 300ms;
@@ -187,26 +215,23 @@ a {
 }
 
 nav {
-  flex-shrink: 0;
-  max-width: 36em;
-  width: 100%;	
-
+  max-width: 38em;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
-  padding-bottom: 20px;
+  margin: 1em 0 1em;
   
   a {
 	  border-bottom:none;
   }
   b {
       font-weight: normal;
+	  font-size: 0.9rem;
   }
 }
 
 .menu-block {
   display: flex;
-  gap: 15px;
+  gap: 10px;
 	
 }
 
@@ -222,7 +247,6 @@ nav {
     grid-template-areas: "content side";
   }
 }
-
 
 .backlink-box {
   background: $color-box-background;

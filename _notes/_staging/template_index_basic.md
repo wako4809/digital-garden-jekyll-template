@@ -31,3 +31,7 @@ The easiest way to get started is to read this [step-by-step guide explaining ho
     max-width: 46em;
   }
 </style>
+
+
+<p style="padding: 1em 2em; background: #f5f7ff; border-radius: 4px;">
+I am open for new projects in Germany, EU and worldwide. If you have questions or comissions please feel free to contact me via <a href="mailto:valera@eshgruppa.com">E-mail</a> or <a href="https://t.me/wa_koo">Telegram</a> .</p>

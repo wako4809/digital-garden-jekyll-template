@@ -1,36 +1,13 @@
 ---
-layout: page
-title: About
-permalink: /about
 ---
-<style>
-	th:nth-child(1),
-	td:nth-child(1) {
-	  width: 15%;
-	}
-
-	th:nth-child(2),
-	td:nth-child(2) {
-	  width: 60%;
-	}
-
-	th:nth-child(3),
-	td:nth-child(3) {
-	  width: 30%;
-  }		
-  /* Enforce row height */
-  tr {
-    height: calc(1.2em * 2); /* Sets row height to at least 2 lines */
-  }
-</style>
-
 ## Education
 
-| 2011–2014 | **VASHGD (S.G. Stroganov Academy)** | Design.<br>Specialist |
-| --------- | -------------------------------------------------------- | ------------------------------------------- |
-| 2014–2016 | **National Institut of Design**                           |Design.<br>Bachelor |
+| 2011–2014 | **HASGD (Stroganov Academy)**    | Design.<br>Specialist |
+| --------- | -------------------------------- | --------------------- |
+| 2014–2016 | **National Institute of Design** | Design.<br>Bachelor   |
 
 ## Work experience
+
 
 | 2016–today | **Co-founder, partner**                                                                                      | ESH                        |
 | ---------- | ------------------------------------------------------------------------------------------------------------ | -------------------------- |

@@ -1,0 +1,34 @@
+// Define SCSS variables (for use in calculations)
+$color-primary-light: hsl(0, 0%, 10%);
+$color-text-light: hsl(0, 0%, 20%);
+$color-subtext-light: hsl(0, 0%, 30%);
+$color-border-light: hsl(0, 0%, 85%);
+$color-box-background-light: mix($color-primary-light, white, 4%);
+
+$color-primary-dark: hsl(0, 0%, 90%);
+$color-text-dark: hsl(0, 0%, 95%);
+$color-subtext-dark: hsl(0, 0%, 70%);
+$color-border-dark: hsl(0, 0%, 40%);
+$color-box-background-dark: hsl(0, 0%, 20%);
+
+$border-radius: 4px;
+$font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+
+/* Define CSS variables for JavaScript-based theme switching */
+:root {
+  --color-primary: #{$color-primary-light};
+  --color-text: #{$color-text-light};
+  --color-subtext: #{$color-subtext-light};
+  --color-border: #{$color-border-light};
+  --color-box-background: #{$color-box-background-light};
+  --font-family: #{$font-family};
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --color-primary: #{$color-primary-dark};
+  --color-text: #{$color-text-dark};
+  --color-subtext: #{$color-subtext-dark};
+  --color-border: #{$color-border-dark};
+  --color-box-background: #{$color-box-background-dark};
+}
