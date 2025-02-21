@@ -3,4 +3,13 @@
 </div>
 <div class="menu-block">
     <a class="internal-link" href="{{ site.baseurl }}/cv"><b>CV</b></a>
+
+
+    <label class="switch">
+    <span class="de"><p style="margin: 0">DE</p></span>
+    <span class="en"><p style="margin: 0">EN</p></span>   
+    <input type="checkbox" class="input" {% if page.lang == "de" %}checked{% endif %}>
+    <span class="slider"></span>
+    </label>
+	
 </div>

@@ -1,14 +1,14 @@
 ---
-title: Impressum
+title: impressum
 layout: page
 permalink: /impressum
+lang: en
 ---
 **Tax Information**<br>
 VAT ID: DE369584814<br>
-St.-Nr.: 32/394/03309
 
 **Post Address**<br>
 Valerii Kozhanov<br>
 Treskowallee 99<br>
 10318 Berlin<br>
-DE<br>
+Germany<br>

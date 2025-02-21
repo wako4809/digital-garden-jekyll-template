@@ -35,10 +35,10 @@ permalink: /
 
 Along the way, I’ve worked in in-house roles, started my own projects, developed educational plans, and co-founded the design agency [ESH](https://eshgruppa.com/), where I work as a managing partner today.
 
-Currently, I focus on brand identities, book design, website design, and educational projects. Some of my work is available on [Behance](https://www.behance.net/kozhanov), and occasionally, I post on [LinkedIn](https://www.linkedin.com/in/valera-kozhanov/).
+Currently, I focus on brand identities, books, websites, and educational projects. Some of my work is available on [Behance](https://www.behance.net/kozhanov), and occasionally, I post on [LinkedIn](https://www.linkedin.com/in/valera-kozhanov/).
 
 ---
- 🥨 I am open to new projects in Germany, the EU, and worldwide. Feel free to contact me via [e-mail](mailto:valera@eshgruppa.com) or [Telegram](https://t.me/wa_koo).
+ 🥨 I am open to new projects in Germany and worldwide. Feel free to contact me via [e-mail](mailto:valera@eshgruppa.com) or [Telegram](https://t.me/wa_koo).
  
 ---------
 

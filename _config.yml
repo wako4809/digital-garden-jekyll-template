@@ -41,3 +41,14 @@ defaults:
       path: "_notes/**/*.md"
     values:
       layout: "note"
+# English Pages (Default)
+  - scope:
+      path: ""
+    values:
+      lang: "en"
+
+  # German Pages
+  - scope:
+      path: "de"
+    values:
+      lang: "de"
